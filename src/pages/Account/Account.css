@@ -1,0 +1,60 @@
+.account-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    /* background-color: pink; */
+
+    .account-card{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap:15px;
+        box-shadow:0 0 4px black;
+        padding:20px;
+        /* background-color: blue; */
+        
+
+        .img-section{
+            height:200px;
+            width: 200px;
+            /* background-color: red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .img-section img{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border:2px solid black;
+        }
+        .info-section{
+            p{
+                font-size: 1rem;
+                margin-bottom: 4px;
+                color:rgb(62, 60, 60)
+            }
+        }
+        .logout-btn{
+            width: 100%;
+        }
+        .logout-btn button{
+            width: 60%;
+            padding:10px;
+            font-size: 24px;
+            color:blue;
+            border:none;
+            border:2px solid blue;
+            border-radius: 10px;
+
+            &:hover{
+                color:white;
+                background-color: blue;
+            }
+        }
+
+    }
+    
+}

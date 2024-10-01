@@ -1,0 +1,131 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 70vh;
+    width: 100%;
+
+    .contact-info{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+
+        @media(max-width: 768px){
+            flex-direction: column;
+        }
+        .our-location{
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+
+            .location-icon{
+                font-size: 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color:red;
+                @media(max-width: 768px){
+                    font-size: 2rem;
+                }
+            }
+            .location-info{
+                font-size: 1.5rem;
+                @media(max-width: 768px){
+                    font-size: 1rem;
+                }
+            }
+        }
+        .our-phone{
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+
+            .phone-icon{
+                font-size: 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color:darkcyan;
+                @media(max-width: 768px){
+                    font-size: 2rem;
+                }
+            }
+            .phone-info{
+                font-size: 1.5rem;
+                @media(max-width: 768px){
+                    font-size: 1rem;
+                }
+            }
+        }
+        .our-socials{
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+
+            .insta a{
+                text-decoration: none;
+                a{
+                    text-decoration: none;
+                }
+                color:palevioletred;
+                font-size: 2.5rem;
+            }
+            .facebook  a{
+                text-decoration: none;
+                a{
+                    text-decoration: none;
+                }
+                color:blue;
+                font-size: 2.5rem;
+            }
+            .whatsapp a {
+                text-decoration: none;
+                a{
+                    text-decoration: none;
+                }
+                color:lime;
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+.contact-form{
+    form{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 8px;
+    padding: 40px;
+        
+        label{
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+        input{
+            padding:8px;
+            border:none;
+            border: 1px solid green;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+        button{
+            margin-top: 20px;
+            padding: 4px;
+            font-size: 0.8rem;
+            background-color: white;
+            color:green;
+            border:2px solid green;
+            &:hover{
+                background-color: aquamarine;
+                color:white;
+                border:2px solid green;
+            }
+        }
+    }
+}
